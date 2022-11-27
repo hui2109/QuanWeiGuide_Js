@@ -118,7 +118,7 @@ class AbstractWritableSet extends AbstractEnumerableSet {
 
 }
 
-class BitSet extends AbstractWritableSet {
+export class BitSet extends AbstractWritableSet {
     constructor(max) {
         super();
         this.max = max;
