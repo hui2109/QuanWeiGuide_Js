@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用DOM生成目录</title>
+    <style>
+        #TOC {
+            border: solid black 1px;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .TOCEntry {
+            margin: 5px 0px;
+        }
+
+        .TOCEntry a {
+            text-decoration: none;
+        }
+
+        .TOCLevel1 {
+            font-size: 16pt;
+            font-weight: bold;
+        }
+
+        .TOCLevel2 {
+            font-size: 14pt;
+            margin-left: .25in;
+        }
+
+        .TOCLevel3 {
+            font-size: 12pt;
+            margin-left: .5in;
+        }
+
+        .TOCSectNum:after {
+            content: ": ";
+        }
+    </style>
+    <script src="07_使用DOM生成目录.js"></script>
+</head>
+<body>
+<h1>使用DOM生成目录</h1>
+<h2>Introduction</h2>
+<p>Benign prostatic hyperplasia (BPH) is a histological diagnosis, which refers to the hyperplasia of glandular
+    epithelium, smooth muscle and connective tissue in the transitional zone (TZ) of the prostate, which can cause
+    increased prostate stiffness [1]. BPH is very prevalent in older men. The histological morbidity rate confirmed by
+    autopsy increases from 40-45 years old, to 60% by age 60 and 80% by age 80 worldwide [2]. BPH can be asymptomatic
+    and no treatment is required for this group of patients. However, BPH can lead to benign prostatic enlargement (BPE)
+    which can block the bladder neck and cause lower urinary tract symptoms (LUTS) [3] and brought many concerns for
+    aging males.</p>
+<p>Histopathological diagnosis is still the gold standard for BPH. However, surgery or biopsy was needed in order to
+    acquire specimens. Ultrasound was introduced in the evaluation of BPH for decades, and it has been utilized
+    commonly. Transrectal ultrasound elastography is an imaging technology sensitive to tissue stiffness that was first
+    described in the 1990s and is widely used in the clinical practice of multiple diseases including depicting prostate
+    cancer and guiding prostate biopsy [4-8]. However, most of these studies used quasi-static (strain) elastography
+    that is limited by its lack of standardization and operator dependency and by the fact that it cannot provide
+    quantitative elasticity data.</p>
+<h2>Materials and methods</h2>
+<h3>Study Participants</h3>
+<p>Between March 2022 and September 2022, consecutive male participants with and without BPH were included, who
+    constituted the BPH and control group respectively. The participants included in our analysis (a) were about to
+    undergo prostate specific antigen (PSA) measurement and partial prostatectomy (only for BPH group), (b) provided
+    informed consent, and (c) were older than 18 years of age. Those excluded from analysis had (a) been diagnosed with
+    prostate cancer (only for BPH group) or BPH (only for control group), (b) the history of partial prostatectomy, (c)
+    inapplicability for SWE examination because of archostegnosis, (d) unreliable measurement results of SWE. The
+    prospective study was undertaken after receiving Ethics Committee approval. All the participants gave written
+    informed consent before inclusion in this prospective institutional review board-approved monocentric study.</p>
+<h3>Image Acquisition</h3>
+<p>All the participants underwent transrectal conventional ultrasound and SWE examinations. Examinations were performed
+    with an Aixplorer scanner (SuperSonic Imagine, Aix-en-Provence, France) using a SE12-3 transrectal transducer by two
+    sonographers (X.H.Z., with 10 years of conventional ultrasound experience, and D.M.C., with 20 years of SWE
+    experience).</p>
+<p>The participants were examined in the left decubitus position. Grey-scale and Dopper’s images were obtained in the
+    axial and sagittal planes and SWE images were acquired in the axial plane (Fig. 1). Optimized settings (maximized
+    penetration, elasticity scale set to 70 kPa) were used as recommended by the manufacturer. The sampling diameter was
+    set to 3.00 mm and the sampling depth was set to 1.5 cm for each examination in SWE. The regions of interest (ROIs)
+    were placed in the transitional zone (TZ) and peripheral zone (PZ) of the medium prostate gland respectively.
+    Measurements were made near the urethra excluded calcified areas. During the SWE examination, the sonographer was
+    asked to keep the probe in a steady-state position for a few seconds until stabilization of the color map and to put
+    as minimal pressure as possible on the prostate through the transducer, to avoid creating artificial areas of
+    increased stiffness in the gland.</p>
+<h4>Volume Measurement</h4>
+<p>Volumes of the prostate (VP) and the TZ (VTZ) were acquired by means of gray-scale ultrasound. In the axial plane,
+    the transverse diameter and anteroposterior diameter of the prostate and the TZ were measured respectively and in
+    the sagittal plane, the cephalocaudal diameter of the prostate and the TZ were measured respectively.</p>
+
+</body>
+</html>

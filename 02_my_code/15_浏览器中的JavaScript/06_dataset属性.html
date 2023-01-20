@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dataset属性</title>
+</head>
+<body>
+<h2 id="title" data-section-number="16.1">Attributes</h2>
+<button id="btn">点我显示dataset属性</button>
+<script>
+    let b = document.querySelector('#btn');
+    b.onclick = function (event) {
+        console.log('事件对象', event);
+        let dataset_obj = document.querySelector('#title').dataset;
+        console.log('dataset属性的值', dataset_obj);
+        let number = document.querySelector('#title').dataset.sectionNumber;
+        console.log('dataset属性中,sectionNumber的值', number);
+    }
+</script>
+</body>
+</html>

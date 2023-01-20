@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册事件处理程序</title>
+</head>
+<body>
+<button id="btn">Please Click Me</button>
+<button onclick="console.log('Thank you');">Please Click</button>
+<script>
+    window.onload = function () {
+        let btn = document.querySelector('#btn');
+        btn.onclick = function (event) {
+            console.log(event);
+        };
+    };
+</script>
+<button id="mybutton">Click me</button>
+<script>
+    let b = document.querySelector('#mybutton');
+    b.onclick = function () {
+        console.log('Thanks for clicking me!');
+    }
+    b.addEventListener('click', () => {
+        console.log('Thanks again!');
+    });
+</script>
+</body>
+</html>

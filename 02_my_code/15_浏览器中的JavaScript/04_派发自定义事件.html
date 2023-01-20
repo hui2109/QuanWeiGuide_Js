@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>派发自定义事件</title>
+</head>
+<body>
+<script>
+    document.addEventListener('busy', (e) => {
+        if (e.detail) {
+            console.log('很忙');
+        } else {
+            console.log('不忙了');
+        }
+    });
+    document.dispatchEvent(new CustomEvent('busy', {detail: true}));  // 第16行的代码一定要写在第9行代码的后面
+    setTimeout(() => {
+        document.dispatchEvent(new CustomEvent('busy', {detail: false}));
+    }, 5000)  // 5秒后说自己不忙了
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>调用事件处理程序</title>
+</head>
+<body>
+<button id="btn">点我</button>
+<script>
+    let b = document.querySelector('#btn');
+    b.onclick = function (event) {
+        console.log('事件类型', event.type);
+        console.log('事件对象', event.target);
+        console.log('当前事件', event.currentTarget);
+        console.log('时间戳', event.timeStamp);
+        console.log('是否信任', event.isTrusted);
+        console.log('this的值', this);
+        console.log('this的值是否就是事件对象', this === event.target);
+    }
+</script>
+</body>
+</html>
